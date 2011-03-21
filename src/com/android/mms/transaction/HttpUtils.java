@@ -17,9 +17,6 @@
 
 package com.android.mms.transaction;
 
-import com.android.mms.R;
-import com.android.mms.ui.MessagingPreferenceActivity;
-
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpHost;
 import org.apache.http.HttpRequest;
@@ -35,17 +32,14 @@ import org.apache.http.params.HttpConnectionParams;
 import com.android.mms.MmsConfig;
 import com.android.mms.LogTag;
 
-import android.content.SharedPreferences;
 import android.content.Context;
 import android.net.http.AndroidHttpClient;
-import android.preference.PreferenceManager;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.util.Config;
 import android.util.Log;
 
-import java.io.ByteArrayOutputStream;
-import java.io.InputStream;
+import java.io.DataInputStream;
 import java.io.IOException;
 import java.net.SocketException;
 import java.net.URI;
@@ -61,8 +55,6 @@ public class HttpUtils {
     public static final int HTTP_POST_METHOD = 1;
     public static final int HTTP_GET_METHOD = 2;
 
-    private static final int MMS_READ_BUFFER = 4096;
-
     // This is the value to use for the "Accept-Language" header.
     // Once it becomes possible for the user to change the locale
     // setting, this should no longer be static.  We should call
@@ -72,8 +64,6 @@ public class HttpUtils {
     static {
         HDR_VALUE_ACCEPT_LANGUAGE = getHttpAcceptLanguage();
     }
-
-    private static String mUserAgent;
 
     // Definition for necessary HTTP headers.
     private static final String HDR_KEY_ACCEPT = "Accept";
@@ -110,7 +100,6 @@ public class HttpUtils {
             Log.v(TAG, "httpConnection: params list");
             Log.v(TAG, "\ttoken\t\t= " + token);
             Log.v(TAG, "\turl\t\t= " + url);
-            Log.v(TAG, "\tUser-Agent\t\t=" + mUserAgent);
             Log.v(TAG, "\tmethod\t\t= "
                     + ((method == HTTP_POST_METHOD) ? "POST"
                             : ((method == HTTP_GET_METHOD) ? "GET" : "UNKNOWN")));
@@ -218,26 +207,23 @@ public class HttpUtils {
             byte[] body = null;
             if (entity != null) {
                 try {
-                    InputStream in = entity.getContent();
-                    ByteArrayOutputStream out = new ByteArrayOutputStream(MMS_READ_BUFFER);
-                    byte[] buffer = new byte[MMS_READ_BUFFER];
-
-                    int byteCount;
-                    try {
-                        while ((byteCount = in.read(buffer)) != -1) {
-                            out.write(buffer, 0, byteCount);
-                        }
-                        body = out.toByteArray();
-                    } finally {
+                    if (entity.getContentLength() > 0) {
+                        body = new byte[(int) entity.getContentLength()];
+                        DataInputStream dis = new DataInputStream(entity.getContent());
                         try {
-                            in.close();
-                            out.close();
-                        } catch (IOException e) {
-                            Log.e(TAG, "Error closing input stream: " + e.getMessage());
+                            dis.readFully(body);
+                        } finally {
+                            try {
+                                dis.close();
+                            } catch (IOException e) {
+                                Log.e(TAG, "Error closing input stream: " + e.getMessage());
+                            }
                         }
                     }
                 } finally {
-                    entity.consumeContent();
+                    if (entity != null) {
+                        entity.consumeContent();
+                    }
                 }
             }
             return body;
@@ -270,15 +256,8 @@ public class HttpUtils {
     }
 
     private static AndroidHttpClient createHttpClient(Context context) {
-        // Get Shared Preferences and User Defined User Agent for MMS
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        mUserAgent = prefs.getString(MessagingPreferenceActivity.USER_AGENT, MmsConfig.getUserAgent());
-        if (mUserAgent == null || mUserAgent.equals("") || mUserAgent.equals("default")) {
-            mUserAgent = MmsConfig.getUserAgent();
-        } else if (mUserAgent.equals("custom")) {
-            mUserAgent = prefs.getString(MessagingPreferenceActivity.USER_AGENT_CUSTOM, MmsConfig.getUserAgent());
-        }
-        AndroidHttpClient client = AndroidHttpClient.newInstance(mUserAgent, context);
+        String userAgent = MmsConfig.getUserAgent();
+        AndroidHttpClient client = AndroidHttpClient.newInstance(userAgent, context);
         HttpParams params = client.getParams();
         HttpProtocolParams.setContentCharset(params, "UTF-8");
 
@@ -287,7 +266,7 @@ public class HttpUtils {
 
         if (Log.isLoggable(LogTag.TRANSACTION, Log.DEBUG)) {
             Log.d(TAG, "[HttpUtils] createHttpClient w/ socket timeout " + soTimeout + " ms, "
-                    + ", UA=" + mUserAgent);
+                    + ", UA=" + userAgent);
         }
         HttpConnectionParams.setSoTimeout(params, soTimeout);
         return client;

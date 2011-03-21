@@ -46,9 +46,6 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
-
 /**
  * This class manages the view for given conversation.
  */
@@ -63,7 +60,6 @@ public class ConversationListItem extends RelativeLayout implements Contact.Upda
     private View mErrorIndicator;
     private ImageView mPresenceView;
     private QuickContactBadge mAvatarView;
-    private boolean mBlackBackground;
 
     static private Drawable sDefaultContactImage;
 
@@ -198,19 +194,9 @@ public class ConversationListItem extends RelativeLayout implements Contact.Upda
 
         setConversationHeader(ch);
 
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        mBlackBackground = prefs.getBoolean(MessagingPreferenceActivity.BLACK_BACKGROUND, false);
-
-        Drawable background;
-        if (!mBlackBackground) {
-            background = ch.isRead()?
+        Drawable background = ch.isRead()?
                 mContext.getResources().getDrawable(R.drawable.conversation_item_background_read) :
                 mContext.getResources().getDrawable(R.drawable.conversation_item_background_unread);
-        } else {
-            background = ch.isRead()?
-                mContext.getResources().getDrawable(R.drawable.conversation_item_background_read_black) :
-                mContext.getResources().getDrawable(R.drawable.conversation_item_background_unread_black);
-        }
 
         setBackgroundDrawable(background);
 

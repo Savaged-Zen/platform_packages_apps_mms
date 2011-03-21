@@ -29,8 +29,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.CursorAdapter;
-import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
 
 /**
  * The back-end data adapter for ConversationList.
@@ -39,7 +37,6 @@ import android.preference.PreferenceManager;
 public class ConversationListAdapter extends CursorAdapter implements AbsListView.RecyclerListener {
     private static final String TAG = "ConversationListAdapter";
     private static final boolean LOCAL_LOGV = false;
-    private boolean mBlackBackground;
 
     private final LayoutInflater mFactory;
     private OnContentChangedListener mOnContentChangedListener;
@@ -70,13 +67,7 @@ public class ConversationListAdapter extends CursorAdapter implements AbsListVie
     @Override
     public View newView(Context context, Cursor cursor, ViewGroup parent) {
         if (LOCAL_LOGV) Log.v(TAG, "inflating new view");
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        mBlackBackground = prefs.getBoolean(MessagingPreferenceActivity.BLACK_BACKGROUND, false);
-        if (!mBlackBackground) {
-          return mFactory.inflate(R.layout.conversation_list_item, parent, false);
-        } else {
-          return mFactory.inflate(R.layout.conversation_list_item_black, parent, false);
-        }
+        return mFactory.inflate(R.layout.conversation_list_item, parent, false);
     }
 
     public interface OnContentChangedListener {
