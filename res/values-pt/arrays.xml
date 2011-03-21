@@ -37,7 +37,10 @@
     <item msgid="2893940139682468617">":-D"</item>
     <item msgid="4888792634429693183">"o_O"</item>
   </string-array>
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 04d4ef4... update xmls
   <string-array name="default_smiley_names">
     <item msgid="1831934949361041701">"Feliz"</item>
     <item msgid="1601611480575517120">"Triste"</item>
@@ -57,6 +60,7 @@
     <item msgid="6334637439528489607">"Rindo"</item>
     <item msgid="7602915122893958066">"Confuso"</item>
   </string-array>
+<<<<<<< HEAD
 
   <string-array name="pref_mms_user_agent_entries">
         <item>Android Padrão</item>
@@ -100,4 +104,6 @@
       <item>11</item>
       <item>12 (Estrita)</item>
   </string-array>
+=======
+>>>>>>> parent of 04d4ef4... update xmls
 </resources>

@@ -56,6 +56,7 @@
     <item msgid="6334637439528489607">"笑顔"</item>
     <item msgid="7602915122893958066">"混乱"</item>
   </string-array>
+<<<<<<< HEAD
 
   <string-array name="pref_mms_user_agent_entries">
     <item>Androidのデフォルト</item>
@@ -99,4 +100,6 @@
     <item>11</item>
     <item>12 (厳しい)</item>
   </string-array>
+=======
+>>>>>>> parent of 04d4ef4... update xmls
 </resources>

@@ -335,6 +335,7 @@
     <string name="sending_message" msgid="222836893217450538">"送信中..."</string>
     <string name="error_state" msgid="5177386717626893507">"データの不整合"</string>
     <string name="error_state_text" msgid="5006221625000536698">"スレッドや宛先のデータに不整合があります。バグレポートをキャプチャして android-sms-bugs@google.com に送信してください。"</string>
+<<<<<<< HEAD
 
     <!-- CyanogenMod -->
     <string name="pref_title_mms_use_sent_timestamp">オリジナルの送信時刻を使用</string>
@@ -423,4 +424,6 @@
     <string name="dialog_phone_goggles_ok">送信</string>
     <string name="dialog_phone_goggles_cancel">下書きを保存</string>
 
+=======
+>>>>>>> parent of 04d4ef4... update xmls
 </resources>

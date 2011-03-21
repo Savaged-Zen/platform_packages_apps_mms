@@ -335,6 +335,7 @@
     <string name="sending_message" msgid="222836893217450538">"Enviando…"</string>
     <string name="error_state" msgid="5177386717626893507">"Estado inconsistente"</string>
     <string name="error_state_text" msgid="5006221625000536698">"O estado das conversas e destinatários está inconsistente. Capture um relatório de bug e envie-o para android-sms-bugs@google.com"</string>
+<<<<<<< HEAD
 
     <!-- Extra Settings: -->
     <string name="pref_extra_settings">Configurações Extra</string>
@@ -435,3 +436,6 @@
     <string name="pref_title_save_location">Diretório a salvar anexo</string>
     <string name="attach_contact_info">Informação do contato</string>
 </resources>
+=======
+</resources>
+>>>>>>> parent of 04d4ef4... update xmls

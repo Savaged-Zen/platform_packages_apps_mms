@@ -192,7 +192,10 @@
     <string name="pref_summary_mms_auto_retrieval" msgid="925163257363757048">"Récupérer automatiquement les messages"</string>
     <string name="pref_title_mms_retrieval_during_roaming" msgid="6016227402731817804">"Itinérance"</string>
     <string name="pref_summary_mms_retrieval_during_roaming" msgid="2427892806582531020">"Récupérer automatiquement les messages en itinérance"</string>
+<<<<<<< HEAD
     <string name="pref_title_save_location">Dossier sauvegarde pièces jointes</string>
+=======
+>>>>>>> parent of 04d4ef4... update xmls
     <string name="to_label" msgid="2355268818058389047">"À "</string>
     <string name="confirm_dialog_title" msgid="5810813994465120375">"Supprimer"</string>
     <string name="confirm_dialog_locked_title" msgid="8179085718150932242">"Supprimer le message verrouillé ?"</string>
@@ -336,6 +339,7 @@
     <string name="sending_message" msgid="222836893217450538">"Envoi en cours…"</string>
     <string name="error_state" msgid="5177386717626893507">"État incohérent"</string>
     <string name="error_state_text" msgid="5006221625000536698">"L\'état des fils de discussion et des destinataires n\'est pas cohérent. Générez un rapport sur les bugs et envoyez-le à android-sms-bugs@google.com"</string>
+<<<<<<< HEAD
 
     <!-- Extra Settings: -->
     <string name="pref_extra_settings">Paramètres supplémentaires</string>
@@ -396,4 +400,6 @@
     <string name="dialog_phone_goggles_unauthorized">Envoyer un SMS n\'est pas recommandé pour le moment.</string>
     <string name="dialog_phone_goggles_ok">Envoyer</string>
     <string name="dialog_phone_goggles_cancel">Enregistrer</string>
+=======
+>>>>>>> parent of 04d4ef4... update xmls
 </resources>

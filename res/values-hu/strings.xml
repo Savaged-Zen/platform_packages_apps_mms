@@ -335,6 +335,7 @@
     <string name="sending_message" msgid="222836893217450538">"Küldés…"</string>
     <string name="error_state" msgid="5177386717626893507">"Inkonzisztens állapot"</string>
     <string name="error_state_text" msgid="5006221625000536698">"A beszélgetések és a címzettek állapota inkonzisztens. Kérjük, készítsen egy programhiba-jelentést, és küldje el az android-sms-bugs@google.com címre."</string>
+<<<<<<< HEAD
 
     <string name="cannot_find_contact">A kiválasztott kapcsolat nem csatolható.</string>
     <string name="pref_title_sms_split_160">SMS bontása</string>
@@ -408,4 +409,6 @@
     <string name="dialog_phone_goggles_unauthorized">Az SMS küldés lehet, hogy nem javasolt.</string>
     <string name="dialog_phone_goggles_ok">Mentés</string>
     <string name="dialog_phone_goggles_cancel">Mentés piszkozatként</string>
+=======
+>>>>>>> parent of 04d4ef4... update xmls
 </resources>

@@ -56,6 +56,7 @@
     <item msgid="6334637439528489607">"Lachen"</item>
     <item msgid="7602915122893958066">"Verwirrt"</item>
   </string-array>
+<<<<<<< HEAD
 
   <string-array name="pref_mms_user_agent_entries">
     <item>Android Standard</item>
@@ -99,4 +100,6 @@
     <item>Mehrmals lang</item>
     <item>@string/pref_mms_custom_option</item>
   </string-array>
+=======
+>>>>>>> parent of 04d4ef4... update xmls
 </resources>

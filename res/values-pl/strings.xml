@@ -192,7 +192,10 @@
     <string name="pref_summary_mms_auto_retrieval" msgid="925163257363757048">"Odbierz wiadomości automatycznie"</string>
     <string name="pref_title_mms_retrieval_during_roaming" msgid="6016227402731817804">"Autoodbieranie w roamingu"</string>
     <string name="pref_summary_mms_retrieval_during_roaming" msgid="2427892806582531020">"Odbierz wiadomości automatycznie w roamingu"</string>
+<<<<<<< HEAD
     <string name="pref_title_save_location">Miejsce docelowe załączników</string>
+=======
+>>>>>>> parent of 04d4ef4... update xmls
     <string name="to_label" msgid="2355268818058389047">"Do "</string>
     <string name="confirm_dialog_title" msgid="5810813994465120375">"Usuń"</string>
     <string name="confirm_dialog_locked_title" msgid="8179085718150932242">"Czy usunąć zablokowaną wiadomość?"</string>
@@ -336,6 +339,7 @@
     <string name="sending_message" msgid="222836893217450538">"Trwa wysyłanie…"</string>
     <string name="error_state" msgid="5177386717626893507">"Niezgodny stan"</string>
     <string name="error_state_text" msgid="5006221625000536698">"Stan wątków i odbiorców jest niezgodny. Utwórz raport o błędzie i wyślij go na adres android-sms-bugs@google.com"</string>
+<<<<<<< HEAD
     
     <!-- Extra Settings: -->
     <string name="pref_extra_settings">Ustawienia dodatkowe</string>
@@ -421,4 +425,6 @@
     <string name="dialog_phone_goggles_unauthorized">Wysyłanie wiadomości w tej chwili może być nierozsądne.</string>
     <string name="dialog_phone_goggles_ok">Wyślij</string>
     <string name="dialog_phone_goggles_cancel">Zapisz wersję roboczą</string>
+=======
+>>>>>>> parent of 04d4ef4... update xmls
 </resources>

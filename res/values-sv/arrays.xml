@@ -56,6 +56,7 @@
     <item msgid="6334637439528489607">"Skrattar"</item>
     <item msgid="7602915122893958066">"Förvirrad"</item>
   </string-array>
+<<<<<<< HEAD
   <string-array name="pref_mms_user_agent_entries">
     <item>Standard Android</item>
     <item>Nokia N95</item>
@@ -95,4 +96,6 @@
     <item>11</item>
     <item>12 (striktast)</item>
   </string-array>
+=======
+>>>>>>> parent of 04d4ef4... update xmls
 </resources>

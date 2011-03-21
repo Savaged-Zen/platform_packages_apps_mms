@@ -108,8 +108,11 @@
     <string name="cannot_send_message" msgid="3918913277571649400">"Impossibile inviare il messaggio"</string>
     <string name="cannot_send_message_reason" msgid="8745080126044054343">"Il messaggio non ha destinatari validi."</string>
     <string name="cannot_forward_drm_obj" msgid="84606990079390099">"Impossibile inoltrare l\'oggetto DRM incluso nel messaggio."</string>
+<<<<<<< HEAD
     <!-- Error message displayed when the user attempts to attach a contact whose ID could not be resolved -->
     <string name="cannot_find_contact">Il contatto che hai selezionato non può essere allegato.</string>
+=======
+>>>>>>> parent of 04d4ef4... update xmls
     <string name="converting_to_picture_message" msgid="2980023239017588627">"Conversione in messaggio multimediale in corso..."</string>
     <string name="converting_to_text_message" msgid="6374423235426015422">"Conversione in messaggio di testo in corso..."</string>
     <string name="cannot_add_slide_anymore" msgid="8437666385579890987">"Impossibile aggiungere altre diapositive."</string>
@@ -169,6 +172,7 @@
     <string name="pref_summary_mms_delivery_reports" msgid="4874657984217756112">"Richiedi una conferma di consegna per ogni messaggio inviato"</string>
     <string name="pref_summary_mms_read_reports" msgid="2748323864008907440">"Richiedi una conferma di lettura per ogni messaggio inviato"</string>
     <string name="pref_summary_sms_delivery_reports" msgid="5852207702358546129">"Richiedi una conferma di consegna per ogni messaggio inviato"</string>
+<<<<<<< HEAD
 
     <!-- Settings item for SMS Split 160 characters setting -->
     <string name="pref_title_sms_split_160">Dividi SMS</string>
@@ -179,6 +183,8 @@
     <!-- Settings item description for boolean SMS Split 160 characters setting -->
     <string name="pref_summary_sms_split_counter">Aggiunge al messaggio un contatore, es. (1/2)</string>
 
+=======
+>>>>>>> parent of 04d4ef4... update xmls
     <string name="pref_summary_auto_delete" msgid="7719538116486177613">"Elimina vecchi messaggi al raggiungimento dei limiti"</string>
     <string name="pref_summary_delete_limit" msgid="597128041393045216">"<xliff:g id="COUNT">%1$s</xliff:g> messaggi per conversazione"</string>
     <string name="pref_title_manage_sim_messages" msgid="7820895261757881177">"Gestisci messaggi della SIM"</string>
@@ -204,10 +210,13 @@
     <string name="pref_summary_mms_auto_retrieval" msgid="925163257363757048">"Recupera messaggi automaticamente"</string>
     <string name="pref_title_mms_retrieval_during_roaming" msgid="6016227402731817804">"Recupero in roaming"</string>
     <string name="pref_summary_mms_retrieval_during_roaming" msgid="2427892806582531020">"Recupera automaticamente i messaggi durante il roaming"</string>
+<<<<<<< HEAD
 
     <!-- Setting item for folder to save MMS Attachments to -->
     <string name="pref_title_save_location">Cartella allegati</string>
 
+=======
+>>>>>>> parent of 04d4ef4... update xmls
     <string name="to_label" msgid="2355268818058389047">"A "</string>
     <string name="confirm_dialog_title" msgid="5810813994465120375">"Elimina"</string>
     <string name="confirm_dialog_locked_title" msgid="8179085718150932242">"Eliminare messaggio bloccato?"</string>
@@ -269,8 +278,11 @@
     <string name="attach_sound" msgid="3149325985970669609">"Audio"</string>
     <string name="attach_record_sound" msgid="6011431304469858929">"Registra audio"</string>
     <string name="attach_slideshow" msgid="3497422151091037063">"Presentazione"</string>
+<<<<<<< HEAD
     <!-- Attachment Type Selector Adapter. This string is an option in the "Attach" dialog, "Add music" dialog -->
     <string name="attach_contact_info">Informazioni contatto</string>
+=======
+>>>>>>> parent of 04d4ef4... update xmls
     <string name="select_bottom_text" msgid="4201966447623311931">"Testo in basso"</string>
     <string name="select_top_text" msgid="6734183477539197815">"Testo in alto"</string>
     <string name="delivery_toast_body" msgid="4478305651728684364">"Messaggio ricevuto da %s"</string>
@@ -353,6 +365,7 @@
     <string name="sending_message" msgid="222836893217450538">"Invio in corso..."</string>
     <string name="error_state" msgid="5177386717626893507">"Stato non coerente"</string>
     <string name="error_state_text" msgid="5006221625000536698">"Lo stato di thread e destinatari non è coerente. Crea un rapporto bug e invialo all\'indirizzo android-sms-bugs@google.com."</string>
+<<<<<<< HEAD
 
     <!-- Extra Settings: -->
     <string name="pref_extra_settings">Impostazioni extra</string>
@@ -445,4 +458,6 @@
     <string name="dialog_phone_goggles_unauthorized">Può non esser saggio inviare messaggi a quest\'ora.</string>
     <string name="dialog_phone_goggles_ok">Invia</string>
     <string name="dialog_phone_goggles_cancel">Salva bozza</string>
+=======
+>>>>>>> parent of 04d4ef4... update xmls
 </resources>

@@ -108,7 +108,10 @@
     <string name="cannot_send_message" msgid="3918913277571649400">"Nachricht kann nicht gesendet werden."</string>
     <string name="cannot_send_message_reason" msgid="8745080126044054343">"Für die Nachricht sind keine gültigen Empfänger vorhanden."</string>
     <string name="cannot_forward_drm_obj" msgid="84606990079390099">"Das in der Nachricht enthaltene DRM-Objekt kann nicht weitergeleitet werden."</string>
+<<<<<<< HEAD
     <string name="cannot_find_contact">Der Kontakt konnte nicht angehängt werden.</string>
+=======
+>>>>>>> parent of 04d4ef4... update xmls
     <string name="converting_to_picture_message" msgid="2980023239017588627">"Konvertierung in Multimedia-Nachricht wird ausgeführt..."</string>
     <string name="converting_to_text_message" msgid="6374423235426015422">"Konvertierung in Textnachricht wird ausgeführt..."</string>
     <string name="cannot_add_slide_anymore" msgid="8437666385579890987">"Es können keine weiteren Dias hinzugefügt werden."</string>
@@ -168,12 +171,15 @@
     <string name="pref_summary_mms_delivery_reports" msgid="4874657984217756112">"Zustellbestätigung für jede gesendete Nachricht anfordern"</string>
     <string name="pref_summary_mms_read_reports" msgid="2748323864008907440">"Lesebestätigung für jede gesendete Nachricht anfordern"</string>
     <string name="pref_summary_sms_delivery_reports" msgid="5852207702358546129">"Zustellbestätigung für jede gesendete Nachricht anfordern"</string>
+<<<<<<< HEAD
 
     <string name="pref_title_sms_split_160">SMS-Teilung</string>
     <string name="pref_summary_sms_split_160">SMS-Nachricht alle 160 Zeichen teilen</string>
     <string name="pref_title_sms_split_counter">Zähler in SMS</string>
     <string name="pref_summary_sms_split_counter">Fügt der Nachricht einen Zähler hinzu, zB. (1/2)</string>
 
+=======
+>>>>>>> parent of 04d4ef4... update xmls
     <string name="pref_summary_auto_delete" msgid="7719538116486177613">"Alte Nachrichten beim Erreichen der Grenzwerte löschen"</string>
     <string name="pref_summary_delete_limit" msgid="597128041393045216">"<xliff:g id="COUNT">%1$s</xliff:g> Nachrichten pro Konversation"</string>
     <string name="pref_title_manage_sim_messages" msgid="7820895261757881177">"Nachrichten auf SIM-Karte"</string>
@@ -199,10 +205,13 @@
     <string name="pref_summary_mms_auto_retrieval" msgid="925163257363757048">"Nachrichten automatisch empfangen"</string>
     <string name="pref_title_mms_retrieval_during_roaming" msgid="6016227402731817804">"Autom. Roaming-Abruf"</string>
     <string name="pref_summary_mms_retrieval_during_roaming" msgid="2427892806582531020">"Bei Roaming Nachrichten automatisch abrufen"</string>
+<<<<<<< HEAD
 
     <!-- Setting item for folder to save MMS Attachments to -->
     <string name="pref_title_save_location">Speicherort für Anhänge</string>
 
+=======
+>>>>>>> parent of 04d4ef4... update xmls
     <string name="to_label" msgid="2355268818058389047">"An "</string>
     <string name="confirm_dialog_title" msgid="5810813994465120375">"Löschen"</string>
     <string name="confirm_dialog_locked_title" msgid="8179085718150932242">"Gesperrte Nachricht entfernen?"</string>
@@ -264,7 +273,10 @@
     <string name="attach_sound" msgid="3149325985970669609">"Audio"</string>
     <string name="attach_record_sound" msgid="6011431304469858929">"Audio aufnehmen"</string>
     <string name="attach_slideshow" msgid="3497422151091037063">"Diashow"</string>
+<<<<<<< HEAD
     <string name="attach_contact_info">Kontaktinformation</string>
+=======
+>>>>>>> parent of 04d4ef4... update xmls
     <string name="select_bottom_text" msgid="4201966447623311931">"Text unten"</string>
     <string name="select_top_text" msgid="6734183477539197815">"Text oben"</string>
     <string name="delivery_toast_body" msgid="4478305651728684364">"Nachricht erhalten von %s"</string>
@@ -347,6 +359,7 @@
     <string name="sending_message" msgid="222836893217450538">"Wird gesendet…"</string>
     <string name="error_state" msgid="5177386717626893507">"Uneinheitlicher Status"</string>
     <string name="error_state_text" msgid="5006221625000536698">"Der Status von Threads und Empfängern ist uneinheitlich. Bitte erstellen Sie einen Fehlerbericht und senden Sie ihn an android-sms-bugs@google.com."</string>
+<<<<<<< HEAD
 
     <!-- Extra Settings: -->
     <string name="pref_extra_settings">Extra-Einstellungen</string>
@@ -438,4 +451,6 @@
     <string name="dialog_phone_goggles_unauthorized">Jetzt eine SMS zu senden wäre nicht sehr schlau.</string>
     <string name="dialog_phone_goggles_ok">Senden</string>
     <string name="dialog_phone_goggles_cancel">Entwurf speichern</string>
+=======
+>>>>>>> parent of 04d4ef4... update xmls
 </resources>

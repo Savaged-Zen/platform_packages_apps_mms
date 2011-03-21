@@ -56,6 +56,7 @@
     <item msgid="6334637439528489607">"Śmieje się"</item>
     <item msgid="7602915122893958066">"Zakłopotany"</item>
   </string-array>
+<<<<<<< HEAD
   <string-array name="pref_mms_user_agent_entries">
         <item>Domyślny Android</item>
         <item>Nokia N95</item>
@@ -81,4 +82,6 @@
       <item>Kilka długich</item>
       <item>@string/pref_mms_custom_option</item>
    </string-array>
+=======
+>>>>>>> parent of 04d4ef4... update xmls
 </resources>

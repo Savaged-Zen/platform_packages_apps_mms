@@ -193,7 +193,10 @@
     <string name="pref_summary_mms_auto_retrieval" msgid="925163257363757048">"Автоматически загружать MMS-сообщения"</string>
     <string name="pref_title_mms_retrieval_during_roaming" msgid="6016227402731817804">"Автозагрузка в роуминге"</string>
     <string name="pref_summary_mms_retrieval_during_roaming" msgid="2427892806582531020">"Автоматически загружать MMS-сообщения в роуминге"</string>
+<<<<<<< HEAD
     <string name="pref_title_save_location">Папка для сохранения приложений</string>   
+=======
+>>>>>>> parent of 04d4ef4... update xmls
     <string name="to_label" msgid="2355268818058389047">"Кому: "</string>
     <string name="confirm_dialog_title" msgid="5810813994465120375">"Удалить"</string>
     <string name="confirm_dialog_locked_title" msgid="8179085718150932242">"Удалить заблокированное сообщение?"</string>
@@ -337,6 +340,7 @@
     <string name="sending_message" msgid="222836893217450538">"Идет отправка…"</string>
     <string name="error_state" msgid="5177386717626893507">"Данные были изменены"</string>
     <string name="error_state_text" msgid="5006221625000536698">"Цепочки не соответствуют получателям. Сделайте снимок экрана и отправьте сообщение об ошибке по адресу android-sms-bugs@google.com."</string>
+<<<<<<< HEAD
 	
 	<string name="pref_extra_settings">Дополнительные настройки</string>
     <string name="pref_title_mms_back_to_all_threads">Вернуться ко всем сообщениям</string>
@@ -398,4 +402,6 @@
     <string name="dialog_phone_goggles_unauthorized">Отправка SMS может быть не уместна в это время.</string>
     <string name="dialog_phone_goggles_ok">Отправить</string>
     <string name="dialog_phone_goggles_cancel">Сохранить черновик</string>
+=======
+>>>>>>> parent of 04d4ef4... update xmls
 </resources>
