@@ -98,7 +98,6 @@ public class SmsMessageSender implements MessageSender {
                 MessagingPreferenceActivity.SMS_SPLIT_COUNTER,
                 DEFAULT_SMS_SPLIT_COUNTER);
 
-
         int[] params = SmsMessage.calculateLength(mMessageText, false);
             /* SmsMessage.calculateLength returns an int[4] with:
              *   int[0] being the number of SMS's required,
